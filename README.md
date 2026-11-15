@@ -58,6 +58,7 @@ The trained captioning model and tokenizer are required to run the application b
 ## How to Run
 
 1. Clone the repository.
+
 2. Install dependencies:
 
 ```bash
@@ -65,13 +66,18 @@ pip install -r requirements.txt
 ```
 
 3. Place `final_caption_model.keras` and `tokenizer.pkl` in the project folder.
-4. Run:
+
+4. Start the Flask application:
 
 ```bash
 python app.py
 ```
 
-5. Open `http://127.0.0.1:5000` in your browser.
+5. Open the application:
+
+   http://127.0.0.1:5000/
+
+**Note:** This address works only when the Flask application is running locally. It is not a publicly deployed website.
 
 ## Future Improvements
 
