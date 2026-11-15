@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arabic Answer Evaluation</title>
+<style>
+body{margin:0;font-family:Arial;background:#f1f5f9;color:#1e293b}
+header{background:#1e3a8a;color:white;text-align:center;padding:30px}
+.container{max-width:650px;margin:50px auto;padding:20px}
+.card{background:white;padding:35px;border-radius:15px;box-shadow:0 5px 20px #0001}
+h2{text-align:center;color:#1e40af}
+label{display:block;margin:20px 0 10px;font-weight:bold}
+textarea{width:100%;box-sizing:border-box;padding:15px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;resize:vertical}
+button{background:#2563eb;color:white;border:0;padding:14px 25px;border-radius:8px;cursor:pointer;margin-top:20px;width:100%}
+button:hover{background:#1d4ed8}
+a{display:block;text-align:center;margin-top:25px;color:#2563eb;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<h1>Arabic Answer Evaluation</h1>
+<p>AI-Powered Student Answer Assessment</p>
+</header>
+<div class="container">
+<div class="card">
+<h2>Teacher Section</h2>
+<form action="/evaluation" method="POST">
+<label>Enter Arabic Question</label>
+<textarea name="question" rows="3" dir="rtl" lang="ar" required></textarea>
+<label>Enter Reference Answer</label>
+<textarea name="reference" rows="4" dir="rtl" lang="ar" required></textarea>
+<button type="submit">Publish Question</button>
+</form>
+<a href="/">Back to Home</a>
+</div>
+</div>
+</body>
+</html>
